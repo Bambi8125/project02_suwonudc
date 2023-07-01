@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Title" content="Suwon Urban Development Corpoation">
+  <meta name="Subject" content="Suwon Urban Development Corpoation Web">
+  <meta name="Keywords" content="수원도시공사 - Suwon Urban Development Corpoation">
+  <meta name="Description" content="수원의 미래가치 디자이너 수원도시공사! 수원시민과의 즐거운 소통 위한 수원도시공사 공식 페이스북에 오신 것을 환영합니다!">
+  <meta name="Classification" content="City Development">
+  <meta name="Copyright" content="Suwon Urban Development Corpoation">
+  <meta name="Author" content="Suwon Urban Development Corpoation">
+  <meta name="Author-date" content="2023-04-06">
+  <meta name="Publisher" content="shinhee lee">
+  <meta name="Location" content="Suwon Korea">
+  <meta name="Generator" content="VsCode">
+  <title>수원도시공사 HOME</title>
+  <!-- link -->
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
+  <link type="text/css" rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link type="text/css" rel="stylesheet" href="./css/weather-icons.min.css">
+  <link type="text/css" rel="stylesheet" href="./font/weathericons-regular-webfont.svg">
+  <link type="text/css" rel="stylesheet" href="./css/style.css">
+
+  <!-- script -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="./js/jquery-1.7.2.min.js"></script>
+  <script src="./js/jquery.easing.1.3.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/mainBanner.js"></script>
+  <script>
+    function setCookie(name, value, expiredays) {
+      var todayDate = new Date();
+
+      todayDate.setDate(todayDate.getDate() + expiredays);
+
+      document.cookie =
+        name +
+        "=" +
+        escape(value) +
+        "; path/; expires=" +
+        todayDate.toUTCString() +
+        ";";
+    }
+
+    function closeWin() {
+      //닫기버튼
+      if (document.notice_form.chkbox.checked) {
+        setCookie("header_top", "done", 1);
+      }
+      document.getElementById("header_top").style.marginTop = "-115px";
+
+
+    }
+  </script>
+</head>
+
+<body>
+  <header id="header_wrap">
+    <div id="header_top">
+      <ul class="top_message">
+        <li class="top_icon fl">
+          <img src="./images/top/domain.png" width="60" height="60" alt="maintenance">
+        </li>
+        <li class="top_txt fl">
+          보다 안정적인 서비스를 위하여 서버 점검이 예정되어 있습니다.
+          <br>
+          <span class="block">※ 작업일시 : 2023년 05월 21일(목) 23:00 ~ 05월 21일(목) 06:00</span>
+          <p>
+            작업시간 동안 홈페이지 연결이 불안정하거나 접속이 불가능할 수 있습니다. 홈페이지 이용에 불편을 끼쳐드려 죄송합니다.
+          </p>
+        </li>
+        <li class="fr top_close">
+          <form name="notice_form">
+            <input type="checkbox" id="chkbox" name="chkbox" value="checkbox">
+            <label for="chkbox">오늘 하루 이 창을 열지 않음</label>
+            <a href="javascript:closeWin()" class="fr">
+              <ion-icon name="close-circle"></ion-icon>
+              <span>o</span>
+            </a>
+          </form>
+        </li>
+      </ul>
+    </div>
+    <script>
+      cookiedata = document.cookie;
+
+      if (cookiedata.indexOf("header_top=done") < 0) {
+        document.getElementById("header_top").style.marginTop = "0";
+      } else {
+        document.getElementById("header_top").style.marginTop = "-115px";
+      }
+    </script>
+    <!-- header_top -->
+    <nav id="navBar">
+      <div id="gnb_wrap">
+        <div id="gnb_sw_logo" class="fl">
+          <a href="https://www.suwon.go.kr/intro.jsp" rel="noopener" target="_blank">
+            <img src="./images/logo/suwonsi_logo.png" width="120" height="42" alt="수원시 로고" class="fl">
+            <img src="./images/top/open_link.png" width="22" alt="새창" class="fl">
+          </a>
+        </div>
+        <!-- 수원시 링크로 새창-->
+        <div id="gnb_center" class="fl">
+          <div id="gnb_news" class="fl">
+            <ul class="news_data">
+              <li><a class="data block" href="#none">수원시가족여성회관, 어르신 손 감각 회복 위한 ‘말랑공’ 제작</a></li>
+              <li> <a class="data block" href="#none">장애인의 날 기념 교통약자이동지원 차량 무료 제공</a></li>
+              <li> <a class="data block" href="#none">2023년도 수원도시공사 고객 모니터링요원 모집</a> </li>
+              <li> <a class="data block" href="#none">수원시연화장, 친환경 장례식장 선도 위해 주방 도구 기부</a></li>
+              <li> <a class="data block" href="#none"> 2023년 5월 서수원칠보체육관 스포츠센터 운영 안내</a> </li>
+              <li> <a class="data block" href="#none">수원시자원순환센터, 안전사고 ZERO! 안전결의대회 개최</a> </li>
+            </ul>
+          </div>
+          <!-- 뉴스 -->
+          <div id="today" class="fl">
+            <ul class="today_date">
+              <li>
+                <img src="./images/top/date_48.png" width="22" alt="달력">
+              </li>
+              <li>오늘은</li>
+              <li class="date em"></li>
+            </ul>
+            <ul class="today_weather fl">
+              <li>
+                <img src="./images/top/thermometer_64.png" width="22" alt="달력">
+              </li>
+              <li>수원의 현재기온은</li>
+              <li class="ctemp em"></li>
+              <li class="cicon em"></li>
+            </ul>
+          </div>
+          <!-- 오늘 -->
+        </div>
+        <aside class="fr">
+          <ul class="fr">
+            <li><a href="./login/index.html"> 로그인 </a></li>
+            <li>|</li>
+            <li><a href="./signup/index.html"> 회원가입 </a></li>
+            <li>|</li>
+            <li><a href="#none"> 사이트맵 </a></li>
+          </ul>
+        </aside>
+      </div>
+      <!-- nav_gnb -->
+      <div id="menu_wrap">
+        <ul class="main_menu">
+          <li class="main_logo fl">
+            <a href="index.html" class="block">
+              <h1>수원도시공사에 오신것을 환영합니다.</h1>
+              <img src="./images/logo/logo.png" height="60" alt="메인로고">
+            </a>
+          </li>
+          <li class="main_menu_list fl">
+            <!-- menuList_01 -->
+            <a href="./sub01/index.html" class="pad-L">
+              <p>개발사업</p>
+            </a>
+            <ul class="sub_menu">
+              <li class="sub_img fl">
+                <h2>개발·사업</h2>
+                <img src="./images/logo/symbol.svg" alt="개발사업bgImg">
+              </li>
+              <li class="fl">
+                <h3><a href="#none">사업정보</a></h3>
+                <dl>
+                  <dt><a href="#none">도시개발사업</a></dt>
+                  <dt><a href="#none">주택건설사업</a></dt>
+                  <dt><a href="#none">도시재생사업</a></dt>
+                  <dt><a href="#none">위수탁개발사업</a></dt>
+                  <dd><a href="#none">완료사업</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">주요사업</a></h3>
+                <dl>
+                  <dt><a href="#none">추진사업</a></dt>
+                  <dd><a href="#none">탑동지구 도시개발사업</a></dd>
+                  <dd><a href="#none">망포역세권 복합개발사업</a></dd>
+                  <dd><a href="#none">오산운암뜰 출자사업</a></dd>
+                  <dt><a href="#none">완료사업</a></dt>
+                  <dd><a href="#none">연화장 시설개선사업</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">공모/공고</a></h3>
+                <dl>
+                  <dt><a href="#none">분양/매각공고</a></dt>
+                  <dt><a href="#none">기타공모/공고</a></dt>
+                  <dt><a href="#none">계약/입찰공고</a></dt>
+                  <dd><a href="#none">마감된 공고</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">개발사업부</a></h3>
+                <dl>
+                  <dt><a href="#none">개발사업부 소개</a></dt>
+                  <dd><a href="#none">조직도/전화번호</a></dd>
+                  <dd><a href="#none">찾아오시는 길</a></dd>
+                  <dt><a href="#none">열린경영</a></dt>
+                  <dd><a href="#none">보도자료</a></dd>
+                  <dd><a href="#none">서식자료실</a></dd>
+                  <dd><a href="#none">법정자료실</a></dd>
+                  <dd><a href="#none">공사규정</a></dd>
+                </dl>
+              </li>
+            </ul>
+          </li>
+          <!-- menuList_01 -->
+
+          <li class="main_menu_list fl">
+            <!-- menuList_02 -->
+            <a href="./sub02/index.html">
+              <p>문화체육</p>
+            </a>
+            <ul class="sub_menu">
+              <li class="sub_img fl">
+                <h2>문화·체육</h2>
+                <img src="./images/logo/symbol.svg" alt="문화체육bgImg">
+              </li>
+              <li class="fl">
+                <h3><a href="#none">문화시설</a></h3>
+                <dl>
+                  <dt><a href="#none">장안구민회관</a></dt>
+                  <dd><a href="#none">평생교육강좌</a></dd>
+                  <dd><a href="#none">스포츠강좌</a></dd>
+                  <dd><a href="#none">공연/전시</a></dd>
+                  <dd><a href="#none">늘봄어르신 건강지원</a></dd>
+                  <dt><a href="#none">가족여성회관</a></dt>
+                  <dd><a href="#none">양성평등사업</a></dd>
+                  <dd><a href="#none">맞춤형교육사업</a></dd>
+                  <dd><a href="#none">대관/사회공헌</a></dd>
+                  <dd><a href="#none">전시관(기억의방)</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">체육시설</a></h3>
+                <dl>
+                  <dt><a href="#none">화산체육공원</a></dt>
+                  <dd><a href="#none">골프시설안내</a></dd>
+                  <dd><a href="#none">체육시설/대관</a></dd>
+                  <dd><a href="#none">생태공원</a></dd>
+                  <dt><a href="#none">서수원칠보체육관</a></dt>
+                  <dd><a href="#none">실내체육관</a></dd>
+                  <dd><a href="#none">스포츠센터</a></dd>
+                  <dd><a href="#none">야외체육시설</a></dd>
+                  <dd>
+                    <a href="#none"><strong>수강신청 바로가기</strong></a>
+                  </dd>
+                  <dt><a href="#none">광교웰빙 국민체육센터</a></dt>
+                  <dd><a href="#none">센터소개</a></dd>
+                  <dd><a href="#none">이용안내</a></dd>
+                  <dd><a href="#none">프로그램</a></dd>
+                  <dd>
+                    <a href="#none"><strong>수강신청 바로가기</strong></a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">광교호수공원</a></h3>
+                <dl>
+                  <dt><a href="#none">가족캠핑장</a></dt>
+                  <dd><a href="#none">캠핑장시설</a></dd>
+                  <dd><a href="#none">이용안내</a></dd>
+                  <dd><a href="#none">이용방법</a></dd>
+                  <dd><a href="#none">이용요금</a></dd>
+                  <dd>
+                    <a href="#none"><strong>이용예약 바로가기</strong></a>
+                  </dd>
+                  <dd><a href="#none">이용객준수사항</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">수원종합운동장</a></h3>
+                <dl>
+                  <dt><a href="#none">대관 및 이용</a></dt>
+                  <dt><a href="#none">주경기장</a></dt>
+                  <dd><a href="#none">Suwon FC</a></dd>
+                  <dt><a href="#none">야구장</a></dt>
+                  <dd><a href="#none">KT Wiz</a></dd>
+                  <dt><a href="#none">수원실내체육관</a></dt>
+                  <dt><a href="#none">국민체육센터</a></dt>
+                  <dt><a href="#none">인조잔디구장</a></dt>
+                  <dt><a href="#none">야외농구장</a></dt>
+                  <dt><a href="#none">리틀야구장</a></dt>
+                  <dt><a href="#none">경기 및 행사</a></dt>
+                  <dd><a href="#none">월간일정표</a></dd>
+                </dl>
+              </li>
+            </ul>
+          </li>
+          <!-- menuList_02 -->
+
+          <li class="main_menu_list fl">
+            <!-- menuList_03 -->
+            <a href="#none">
+              <p>교통복지</p>
+            </a>
+            <ul class="sub_menu">
+              <li class="sub_img fl">
+                <h2>교통·복지</h2>
+                <img src="./images/logo/symbol.svg" alt="주차교통bgImg">
+              </li>
+              <li class="fl">
+                <h3><a href="#none">주차서비스</a></h3>
+                <dl>
+                  <dt><a href="#none">공영주차장</a></dt>
+                  <dt><a href="#none">거주자우선주차</a></dt>
+                  <dd><a href="#none">서비스 신청하러가기</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">교통서비스</a></h3>
+                <dl>
+                  <dt><a href="#none">전기차충전소</a></dt>
+                  <dt><a href="#none">공영버스차고지</a></dt>
+                  <dt><a href="#none">견인차량보관소</a></dt>
+                  <dt><a href="#none">번호판제작소</a></dt>
+                  <dt><a href="#none">환승센터</a></dt>
+                  <dd><a href="#none">수원역환승센터</a></dd>
+                  <dd><a href="#none">광교중앙역환승센터</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">한아름콜센터</a></h3>
+                <dl>
+                  <dt><a href="#none">한아름콜소개</a></dt>
+                  <dt><a href="#none">이용안내</a></dt>
+                  <dd><a href="#none">운영차량</a></dd>
+                  <dd><a href="#none">이용방법/요금</a></dd>
+                  <dd><a href="#none">이용대상/지역</a></dd>
+                  <dd><a href="#none">등록방법</a></dd>
+                  <dd>
+                    <a href="#none"><strong>이용대상자 신청하기</strong></a>
+                  </dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">교통지원부</a></h3>
+                <dl>
+                  <dt><a href="#none">교통지원부 소개</a></dt>
+                  <dd><a href="#none">조직도/전화번호</a></dd>
+                  <dd><a href="#none">찾아오시는 길</a></dd>
+                </dl>
+              </li>
+            </ul>
+          </li>
+          <!-- menuList_03 -->
+
+          <li class="main_menu_list fl">
+            <!-- menuList_04 -->
+            <a href="#none">
+              <p>생활복지</p>
+            </a>
+            <ul class="sub_menu">
+              <li class="sub_img fl">
+                <h2>생활·복지</h2>
+                <img src="./images/logo/symbol.svg" alt="생활복지bgImg">
+              </li>
+              <li class="fl">
+                <h3><a href="#none">생활복지기관</a></h3>
+                <dl>
+                  <dt><a href="#none">장기요양지원센터</a></dt>
+                  <dt><a href="#none">수원시자원순환센터</a></dt>
+                  <dd><a href="#none">생활폐기물수집/운반</a></dd>
+                  <dd><a href="#none">재활용품매각</a></dd>
+                  <dd><a href="#none">종량제봉투판매</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">수원시연화장</a></h3>
+                <dl>
+                  <dt><a href="#none">승화원(화장장)</a></dt>
+                  <dd><a href="#none">이용안내</a></dd>
+                  <dd><a href="#none">구비서류 및 사용료</a></dd>
+                  <dd><a href="#none">화장예약</a></dd>
+                  <dt><a href="#none">봉안시설</a></dt>
+                  <dt><a href="#none">사이버추모관</a></dt>
+                  <dt><a href="#none">장례식장</a></dt>
+                  <dd><a href="#none">시설안내</a></dd>
+                  <dd><a href="#none">이용안내</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">사업소개</a></h3>
+                <dl>
+                  <dt><a href="#none">역전지하상가</a></dt>
+                  <dd><a href="#none">약도보기</a></dd>
+                </dl>
+              </li>
+            </ul>
+          </li>
+          <!-- menuList_04 -->
+
+          <li class="main_menu_list fl">
+            <!-- menuList_05 -->
+            <a href="./notice/index.html">
+              <p>알림마당</p>
+            </a>
+            <ul class="sub_menu">
+              <li class="sub_img fl">
+                <h2>알림마당</h2>
+                <img src="./images/logo/symbol.svg" alt="알림마당bgImg">
+              </li>
+              <li class="fl">
+                <h3><a href="./notice/index.html">알림마당</a></h3>
+                <dl>
+                  <dt><a href="#none">공지사항</a></dt>
+                  <dt><a href="#none">채용정보</a></dt>
+                  <dt><a href="#none">보도자료</a></dt>
+                  <dd><a href="#none">입찰공지</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">고객의 소리</a></h3>
+                <dl>
+                  <dt><a href="#none">통합신고센터</a></dt>
+                  <dt><a href="#none">부조리(소극행정)신고</a></dt>
+                  <dt><a href="#none">칭찬합시다</a></dt>
+                  <dd><a href="#none">엔젤스요원</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">고객소통</a></h3>
+                <dl>
+                  <dt><a href="#none">시민참여예산방</a></dt>
+                  <dt><a href="#none">문의사항</a></dt>
+                  <dd><a href="#none">자주묻는질문</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">정보공개</a></h3>
+                <dl>
+                  <dt><a href="#none">경영공시</a></dt>
+                  <dt><a href="#none">행정정보공개</a></dt>
+                  <dt><a href="#none">사전정보공표목록</a></dt>
+                  <dt><a href="#none">공공누리저작권</a></dt>
+                  <dt><a href="#none">중점사업실명제</a></dt>
+                  <dt><a href="#none">공공데이터개방</a></dt>
+                  <dd><a href="#none">계약정보공개</a></dd>
+                  <dd><a href="#none">업무정보공개</a></dd>
+                </dl>
+              </li>
+            </ul>
+          </li>
+          <!-- menuList_05 -->
+
+          <li class="main_menu_list fl">
+            <!-- menuList_06 -->
+            <a href="#none">
+              <p>공사소개</p>
+            </a>
+            <ul class="sub_menu">
+              <li class="sub_img fl">
+                <h2>공사소개</h2>
+                <img src="./images/logo/symbol.svg" alt="공사소개bgImg">
+              </li>
+              <li class="fl">
+                <h3><a href="#none">공사소개</a></h3>
+                <dl>
+                  <dt><a href="#none">조직도/전화번호</a></dt>
+                  <dt><a href="#none">공사사회공헌</a></dt>
+                  <dt><a href="#none">적극행정 코너</a></dt>
+                  <dt><a href="#none">이용안내</a></dt>
+                  <dd><a href="#none">찾아오시는 길</a></dd>
+                </dl>
+              </li>
+              <li class="fl">
+                <h3><a href="#none">경영방침</a></h3>
+                <dl>
+                  <dt><a href="#none">인권경영</a></dt>
+                  <dt><a href="#none">윤리경영</a></dt>
+                  <dt><a href="#none">반부패·청렴활동</a></dt>
+                  <dd><a href="#none">안전보건경영방침</a></dd>
+                </dl>
+              </li>
+            </ul>
+          </li>
+          <!-- menuList_06 -->
+        </ul>
+      </div>
+      <!-- nav_menu -->
+    </nav>
+    <!-- header_nav -->
+  </header>
+
+  <!-- 자주 찾는 서비스  -->
+  <div class="floatBox">
+    <ul>
+      <li class="floatTop">수원도시공사</li>
+      <li><a href="#none">공영주차장</a></li>
+      <li><a href="#none">전기차충전소</a></li>
+      <li><a href="#none">거주자우선주차</a></li>
+      <li><a href="#none">광교호수가족캠핑장</a></li>
+      <li><a href="#none">광교웰빙국민체육센터</a></li>
+      <li><a href="#none">수원종합운동장</a></li>
+      <li class="teamSW"><a href="#none">Suwon FC 경기일정</a></li>
+      <li class="teamSW"><a href="#none">KT Wiz 경기일정</a></li>
+      <li><a href="#none">서수원칠보체육관</a></li>
+      <li><a href="#none">화산체육공원</a></li>
+      <li><a href="#none">장안구민회관</a></li>
+      <li><a href="#none">수원시가족여성회관</a></li>
+      <li><a href="#none">장기요양지원센터</a></li>
+      <li><a href="#none">수원시연화장</a></li>
+      <li><a href="#none">자원순환센터</a></li>
+    </ul>
+    <span onClick="javascript:window.scrollTo({top:0, behavior:'smooth'})">맨 위로</span>
+    <div class="double">
+      <img src="./images/main/double_left.png" class="doubleArrow" alt="맨위로">
+    </div>
+  </div>
+
+  <script>
+    // 퀵메뉴 - 브라우저 아래에서 자동으로 보이게
+    $(window).scroll(function () {
+      var sEnd = $(window).scrollTop();
+      console.log(sEnd); //스크롤 값 확인용
+      if (sEnd == $(document).height() - $(window).height()) {
+        //스크롤이 끝에 도달했을때 실행될 이벤트
+        $('.floatBox').removeClass('hideFloat');
+        $('.doubleArrow').removeClass('switch');
+      }
+    });
+
+    // 퀵메뉴 - 숨김버튼 토글
+    $('.floatBox .double').on('click', function () {
+      $(this).find('img').toggleClass('switch');
+      $(this).parent().toggleClass('hideFloat');
+    })
+  </script>
+
+
+  <!-- *** 상단 고정영역-->
+
+  <!-- 메인페이지 컨텐츠 -->
+  <main>
+    <section id="main_top">
+      <h2 class="hide">메인배너영역</h2>
+      <div class="banner_Left fl">
+        <p id="banner_ico1"><a href="#none">시설물 안전신고</a></p>
+        <p id="banner_ico2"><a href="#none">시민참여 예산방</a></p>
+        <p id="banner_ico3">
+          <a href="#none"> <span>사전정보<br>공표목록</span></a>
+        </p>
+        <p id="banner_ico4">
+          <span><small>수원도시공사</small><br>SNS</span>
+          <a href="https://blog.naver.com/suwon_sudc" rel="noopener" target="_blank">
+            <em>네이버블로그</em>
+            <img src="./images/main/naverblog.svg" width="45" alt="네이버블로그">
+          </a>
+          <a href="https://www.instagram.com/suwon_sudc/" rel="noopener"  target="_blank">
+            <em>인스타그램</em>
+            <img src="./images/main/insta.svg" width="45" alt="인스타그램">
+          </a>
+          <a href="https://www.facebook.com/suwonsudc" rel="noopener"  target="_blank">
+            <em>페이스북</em>
+            <img src="./images/main/facebook.svg" width="45" alt="페이스북">
+          </a>
+        </p>
+      </div>
+
+      <div class="banner_right">
+        <div id="bannerImg">
+          <ul>
+            <li class="bannerImg01"><a href="#none">배너이미지1</a></li>
+            <li class="bannerImg02"><a href="#none">배너이미지2</a></li>
+            <li class="bannerImg03"><a href="#none">배너이미지3</a></li>
+            <li class="bannerImg04"><a href="#none">배너이미지3</a></li>
+            <li class="bannerImg05"><a href="#none">배너이미지3</a></li>
+          </ul>
+        </div>
+        <ul class="countList">
+          <li class="on">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul>
+        <div class="btn btn_left">
+          <ion-icon class="icon prev" name="chevron-back-outline"></ion-icon>
+        </div>
+        <div class="btn btn_right">
+          <ion-icon class="icon next" name="chevron-forward-outline"></ion-icon>
+        </div>
+      </div>
+    </section>
+
+    <section id="main_bottom">
+      <h2>
+        <img class="fl" src="./images/main/pin_red.png" width="60" alt="pin">
+        <span class="fl">원클릭서비스</span>
+      </h2>
+      <div>
+        <ul>
+          <li class="fl">
+            <a href="#none" class="block"> <img src="./images/main/chat-b-50.png" height="30" alt="민원">
+              <p>온라인<br>통합민원</p>
+            </a>
+          </li>
+          <li class="fl">
+            <a href="#none" class="block"><img src="./images/main/date-b-50.png" height="30" alt="강좌">
+              <p>강좌 및 시설<br>예약 및 결제</p>
+            </a>
+          </li>
+          <li class="fl">
+            <a href="#none" class="block"><img src="./images/main/camp-b-50.png" height="30" alt="캠핑">
+              <p>광교캠핑장<br>예약 및 결제</p>
+            </a>
+          </li>
+          <li class="fl">
+            <a href="#none" class="block"> <img src="./images/main/coin-b-50.png" height="30" alt="주차">
+              <p>주차요금<br>납부 / 환불</p>
+            </a>
+          </li>
+          <li class="fl">
+            <a href="#none" class="block"><img src="./images/main/net-b-50.png" height="30" alt="조직">
+              <p>조직도<br>전화번호</p>
+            </a>
+          </li>
+          <li class="fl">
+            <a href="#none" class="block"> <img src="./images/main/map-b-50.png" height="30" alt="공사">
+              <p>공사 사업장<br>위치찾기</p>
+            </a>
+          </li>
+          <li class="fl">
+            <a href="#none" class="block"> <img src="./images/main/report-50.png" height="30" alt="민원">
+              <p>부패 / 공익<br>신고센터</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- main *** -->
+
+  <!-- 공지탭메뉴 / 팝업배너존 -->
+  <article>
+    <div id="board_and_pop">
+      <div class="article_title">
+        <h2>수원도시공사 <span>알림마당</span></h2>
+        <p>수원도시공사의 새로운 소식들을 전해드립니다</p>
+      </div>
+      <div class="bap_wrap">
+        <!-- article > 공지탭메뉴 -->
+        <div class="board_zone fl">
+          <div class="tabMenu1">
+            <input type="radio" name="tab" checked id="1stTab">
+            <input type="radio" name="tab" id="2ndTab">
+            <input type="radio" name="tab" id="3rdTab">
+            <input type="radio" name="tab" id="4thTab">
+            <section class="tabLabel">
+              <h6>탭 라벨</h6>
+              <label for="1stTab">공지사항</label>
+              <label for="2ndTab">채용정보</label>
+              <label for="3rdTab">보도자료</label>
+              <label for="4thTab">입찰공지</label>
+              <a href="./notice/index.html">
+                <ion-icon name="add-outline"><span>0</span></ion-icon>
+              </a>
+            </section>
+
+            <!--탭메뉴 공지사항 컨텐츠 -->
+            <!-- 1 - 공지사항 -->
+            <div class="tab_items">
+              <ul>
+                <li class="tab_item_content">
+                  <a href="#none">
+                    <h5>
+                      2023년 2분기 수원종합운동장 인조잔디구장 정기대관 공고
+                    </h5>
+                    <p>
+                      수원도시공사에서는 수원시민에게 공정한 체육공간 제공과
+                      효율적인 체육시설운영을 위하여 수원종합운동장
+                      인조잔디구장의 2023년 2분기 정기대관을 아래와 같이
+                      실시하고자 하오니 이용에 착오 없으시길 바랍니다.
+                    </p>
+                    <span class="fl">2023-04-16</span>
+                    <span class="fr">더보기 +</span>
+                  </a>
+                </li>
+                <li class="tab_item_content">
+                  <a href="#none">
+                    <h5>광교캠핑장 5월 당첨자</h5>
+                    <p>
+                      입금 마감은 4/18(화)10시까지이며 미입금시 예약이
+                      취소됩니다. 5월 선착순 예약은 4/18(화)11:00부터
+                      가능합니다. 요금결제는 홈페이지 예약하기> 예약확인 및
+                      취소에서 결제 진행 순서에 따라 가상계좌 또는 신용카드로
+                      결제를 바랍니다.
+                    </p>
+                    <span class="fl">2023-04-02</span>
+                    <span class="fr">더보기 +</span>
+                  </a>
+                </li>
+                <li class="tab_item_content">
+                  <a href="#none">
+                    <h5>장안구민회관 5월 스포츠시설 운영(회원모집) 안내</h5>
+                    <p>
+                      운영기간 : 2023. 5월 2일 ~ 5월 31일(추후 일정 별도 공지)
+                      ※ 5. 29.(대체공휴일) : 생활체육강좌 정상운영,
+                      수영/헬스/스쿼시 자유이용(일일입장) □ 운영시간 :
+                      월~금(06~22시), 토(09~18시), 일(10~17시) 홀수주 운영 □
+                      강좌 신청일정 ○ 신청(결제)기간 : 4월 20일(목) ~
+                      25일(화), 07~21시 / 토요일 09~17시 ○ 개/폐강 확정 : 4월
+                      26일(수) ○ 추가신청(결제) : 4월 27일(목) ~ 28일(금),
+                      07~21시
+                    </p>
+                    <span class="fl">2023-03-20</span>
+                    <span class="fr">더보기 +</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 2 - 채용정보 -->
+            <div class="tab_items">
+              <ul>
+                <li class="tab_item_content">
+                  <a href="#none">
+                    <h5>
+                      2023년 4060 맞춤형 재취업 지원사업 직업능력개발훈련
+                      참여자 모집 홍보
+                    </h5>
+                    <p>
+                      경기도 일자리 재단에서는 경기도 베이비부머 세대의 재취업
+                      지원을 위하여 4060 맞춤형 재취업 지원사업을 추진하고
+                      있습니다. 관심있는 여러분의 많은 참여를 바랍니다. - 참여
+                      신청 : 2023. 4. 10. (월) ~ 4. 26. (수) - 서류 합격자
+                      발표 : 2023. 4. 28. (금) - 면접 : 2023. 5. 2.(화) ~ 5.
+                      4.(목)
+                    </p>
+                    <span class="fl">2023-04-17</span>
+                    <span class="fr">더보기 +</span>
+                  </a>
+                </li>
+                <li class="tab_item_content">
+                  <a href="#none">
+                    <h5>경기도수원월드컵경기장관리재단 직원 채용 공고</h5>
+                    <p>
+                      경기도수원월드컵경기장관리재단은 경기도와 수원시에서
+                      출연한 재단법인으로 도·시민에게 행복자산으로서의
+                      복합문화공간을 제공하기 위해 노력하는 기관입니다. 우리
+                      재단과 함께 미래를 열어갈 유능한 인재를 아래와 같이
+                      모시고자 합니다.
+                    </p>
+                    <span class="fl">2023-04-15</span>
+                    <span class="fr">더보기 +</span>
+                  </a>
+                </li>
+                <li class="tab_item_content">
+                  <a href="#none">
+                    <h5>2023년 제2회 수원도시공사 기간제 채용 공고</h5>
+                    <p>
+                      수원도시공사 기간제근로자(한시적 운영) 채용계획을 다음과
+                      같이 공고합니다. 1. 채용인원 : 7명 2. 채용분야 :
+                      기간제근로자(조리원 5명, 운전원(봉투배송) 1명,
+                      재활용선별원 1명) ※ 응시자격 및 계약기간 : 붙임 공고문
+                      참조
+                    </p>
+                    <span class="fl">2023-04-12</span>
+                    <span class="fr">더보기 +</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 3 - 보도자료 -->
+            <div class="tab_items">
+              <ul>
+                <li class="tab_item_content">
+                  <a href="#none">
+                    <h5>장애인의 날 기념 교통약자이동지원 차량 무료 제공</h5>
+                    <p>
+                      수원도시공사(사장 허정문)는 오는 20일 장애인의 날을 맞아
+                      교통약자이동지원 차량 이용요금을 무료 제공한다고 17일
+                      밝혔다. 이용 대상은 장애인, 노약자, 임산부 등
+                      교통약자이동지원 서비스에 등록된 고객이다.
+                    </p>
+                    <span class="fl">2023-03-20</span>
+                    <span class="fr">더보기 +</span>
+                  </a>
+                </li>
+                <li class="tab_item_content">
+                  <a href="#none">
+                    <h5>‘국민안전의 날 기념’ 재난 비상 훈련 실시</h5>
+                    <p>
+                      수원도시공사(사장 허정문)가 국민안전의 날을 맞아 주요
+                      사업장에서 상황별 비상사태 훈련을 실시한다. 재난·재해
+                      발생 시 위기 극복 능력을 강화해 시민의 안전을 지키기
+                      위해서다. 10일 수원도시공사에 따르면 공사는 이날부터
+                      28일까지 ‘국민안전의 날 기념 상황별 비상사태 훈련’을
+                      실시한다.
+                    </p>
+                    <span class="fl">2023-03-20</span>
+                    <span class="fr">더보기 +</span>
+                  </a>
+                </li>
+                <li class="tab_item_content">
+                  <a href="#none">
+                    <h5>인권 중심 경영 실천에 나서</h5>
+                    <p>
+                      수원도시공사(사장 허정문)는 22일 ‘소통과 공감이 함께
+                      하는 지속가능한 인권경영’을 위해 ‘2023년도 인권경영헌정
+                      선포식’을 개최했다 이날 더함파크 3층 대회의실에서 열린
+                      선포식에는 임직원 등 80여 명이 참석했다. 행사는 직원의
+                      인권경영헌장 낭독, 사장의 인권경영헌정 선포 순으로
+                      진행됐다.
+                    </p>
+                    <span class="fl">2023-03-20</span>
+                    <span class="fr">더보기 +</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 4 - 입찰공지 -->
+            <div class="tab_items">
+              <ul>
+                <li class="tab_item_content">
+                  <a href="#none">
+                    <h5>2022년 4분기 자동차등록번호판 원판 구입</h5>
+                    <p>
+                      2022년 4분기 자동차등록번호판 원판 구입과 관련하여
+                      아래와 같이 사전공지합니다. 1. 공고명 : 2022년 4분기
+                      자동차등록번호판 원판 구입 2. 대 상 : 2022년 4분기
+                      자동차등록번호판 원판 구입(등록번호 : 1200063) 입찰자는
+                      반드시 조달청(https://www.g2b.go.kr/indwx.jsp)에
+                      접속하여 첨부파일인 공고문 등을 확인한 후 입찰에
+                      참여하시기 바랍니다.
+                    </p>
+                    <span class="fl">2022-10-19</span>
+                    <span class="fr">더보기 +</span>
+                  </a>
+                </li>
+                <li class="tab_item_content">
+                  <a href="#none">
+                    <h5>2022년 임직원 단체보험 가입</h5>
+                    <p>
+                      2022년 임직원 단체보험 가입과 관련하여 아래와 같이
+                      사전공지합니다. 1. 공고명 : 2022년 임직원 단체보험 가입
+                      2. 대 상 : 2022년 임직원 단체보험 가입(등록번호 :
+                      1151366) 입찰자는 반드시
+                      조달청(https://www.g2b.go.kr/indwx.jsp)에 접속하여
+                      첨부파일인 공고문 등을 확인한 후 입찰에 참여하시기
+                      바랍니다.
+                    </p>
+                    <span class="fl">2022-05-27</span>
+                    <span class="fr">더보기 +</span>
+                  </a>
+                </li>
+                <li class="tab_item_content">
+                  <a href="#none">
+                    <h5>2022년 화산체육공원 골프공 구입</h5>
+                    <p>
+                      2022년 화산체육공원 골프공 구입과 관련하여 아래와 같이
+                      사전공지합니다. 1. 공고명 : 2022년 화산체육공원 골프공
+                      구입 2. 대 상 : 2022년 화산체육공원 골프공 구입(등록번호
+                      : 1127793) 입찰자는 반드시
+                      조달청(https://www.g2b.go.kr/indwx.jsp)에 접속하여
+                      첨부파일인 공고문 등을 확인한 후 입찰에 참여하시기
+                      바랍니다.
+                    </p>
+                    <span class="fl">2023-03-20</span>
+                    <span class="fr">더보기 +</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- article > 팝업배너 / 모달팝업 스크립트 -->
+        <div class="popup_zone fl">
+          <form name="modalPop" id="modalPop">
+            <img src="./images/popup/popUpimg01.jpg" alt="모달팝업">
+            <input type="checkbox" name="closebox" value="closebox" id="closebox">
+            <label for="closebox">오늘 하루 이 창을 열지 않음</label>
+            <a href="javascript:closePop()" class="Xbutton"> 닫기X </a>
+          </form>
+          <script>
+            cookiedata = document.cookie;
+            if (cookiedata.indexOf("modalPop=done") < 0) {
+              document.getElementById("modalPop").style.display = "block";
+            } else {
+              document.getElementById("modalPop").style.display = "none";
+            }
+
+            function closePop() {
+              //모달 닫기버튼
+              if (document.modalPop.closebox.checked) {
+                setCookie("#modalPop", "done", 1);
+              }
+              document.getElementById("modalPop").style.display = "none";
+            }
+          </script>
+
+          <h3>POP-UP ZONE</h3>
+          <img class="suwoni" src="./images/article01_pop/suwoni_megaphone.png" width="190" alt="suwoniBG">
+          <div class="pop_wrap">
+            <ul class="popup">
+              <li>
+                <a href="#none"><img src="./images/article01_pop/pop04.jpg" width="340" alt="pop04"
+                    onclick="window.open('./images/article01_pop/pop04.jpg','asdfo8or','scrollbars=yes,width=620px,height=650px,top=200,left=900');"></a>
+              </li>
+              <li>
+                <a href="#none"><img src="./images/article01_pop/pop01.jpg" width="340" alt="pop01"
+                    onclick="window.open('./images/article01_pop/pop01.jpg','asdfo8or','scrollbars=yes,width=620px,height=650px,top=200,left=900');"></a>
+              </li>
+              <li>
+                <a href="#none"><img src="./images/article01_pop/pop02.jpg" width="340" alt="pop02"
+                    onclick="window.open('./images/article01_pop/pop02.jpg','asdfo8or','scrollbars=yes,width=620px,height=650px,top=200,left=900');"></a>
+              </li>
+              <li>
+                <a href="#none"><img src="./images/article01_pop/pop03.jpg" width="340" alt="pop03"
+                    onclick="window.open('./images/article01_pop/pop03.jpg','asdfo8or','scrollbars=yes,width=620px,height=650px,top=200,left=900');"></a>
+              </li>
+              <li>
+                <a href="#none"><img src="./images/article01_pop/pop05.jpg" width="340" alt="pop05"
+                    onclick="window.open('./images/article01_pop/pop05.jpg','asdfo8or','scrollbars=yes,width=620px,height=650px,top=200,left=900');"></a>
+              </li>
+              <li>
+                <a href="#none"><img src="./images/article01_pop/pop06.jpg" width="340" alt="pop06"
+                    onclick="window.open('./images/article01_pop/pop06.jpg','asdfo8or','scrollbars=yes,width=620px,height=650px,top=200,left=900');"></a>
+              </li>
+              <li>
+                <a href="#none"><img src="./images/article01_pop/pop07.jpg" width="340" alt="pop07"
+                    onclick="window.open('./images/article01_pop/pop07.jpg','asdfo8or','scrollbars=yes,width=620px,height=650px,top=200,left=900');"></a>
+              </li>
+            </ul>
+            <span>
+              <ion-icon name="expand-outline"></ion-icon>이미지를 클릭해서
+              큰창에서 보기
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 수원도시공사 소셜미디어 -->
+  <article class="bgColor">
+    <div id="social_media">
+      <div class="article_title">
+        <h2>수원도시공사 <span>#SNS</span></h2>
+        <p>시민과 소통하는 스마트 공기업 수원도시공사</p>
+      </div>
+
+      <div class="sm_wrap">
+        <!-- NAVER blog -->
+        <div class="card_wrap fl">
+          <p class="hashtag block fr">#NAVER_BLOG</p>
+          <div class="card">
+            <div class="cd_imgBox">
+              <img src="./images/article02_sns/thumbnail01.jpg" alt="">
+            </div>
+            <div class="cd_txtBox">
+              <h4 class="cd_tit block">
+                [수원시가족여성회관 직장인을 위한 단기특강 - 퇴근길 힐링수업]
+              </h4>
+              <p class="cd_txt block">
+                수원시가족여성회관에서 직장인들을 위한 퇴근길 힐링수업을
+                준비했습니다! 나만의 애착인형 뜨기 '아무튼손뜨개'와
+                비건가죽으로 만드는 미니플랩백 '비건가죽공예'인데요~ 복잡하고
+                어지러운 일상에서 벗어나 손뜨개와 가죽공예에 집중하며 온전한
+                나만의 시간을 가져보세요~! 모집기간 : 2023. 2. 13. ~ 2. 24.
+                수강료 : 20,000원 (강좌별, 재료비 별도)
+              </p>
+              <a href="#none">
+                <p class="cd_more block fr">
+                  네이버 블로그에서 보기<span> ></span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- facebook -->
+        <div class="card_wrap fl">
+          <p class="hashtag block fr">#FACEBOOK</p>
+          <div class="card">
+            <div class="cd_imgBox">
+              <img src="./images/article02_sns/thumbnail02.jpg" alt="">
+            </div>
+            <div class="cd_txtBox">
+              <h4 class="cd_tit block">
+                [수원도시공사 2023 SNS 시민서포터즈 합격자 발표]
+              </h4>
+              <p class="cd_txt block">
+                2023년 수원도시공사와 함께하는 2023 SNS 시민서포터즈가
+                선정되었습니다! 수원도시공사가 운영하는 다양한 시설들 소식을
+                생생하게 전달해주실 서포터즈 여러분 환영합니다! 선정자는
+                아래의 링크를 통해 확인하실 수 있습니다
+              </p>
+              <a href="#none">
+                <p class="cd_more block fr">
+                  페이스북에서 보기<span> ></span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- instagram -->
+        <div class="card_wrap fl">
+          <p class="hashtag block fr">#INSTAGRAM</p>
+          <div class="card">
+            <div class="cd_imgBox">
+              <img src="./images/article02_sns/thumbnail03.jpg" alt="">
+            </div>
+            <div class="cd_txtBox">
+              <h4 class="cd_tit block">
+                지구의 날 행동실천 퀴즈 이벤트 : 지구에게 '쉼'을 선물해주세요!
+              </h4>
+              <p class="cd_txt block">
+                4월 22일은 지구 환경오염 문제의 심각성을 알리기 위해 제정한
+                지구 환경 보호의 날인 ‘지구의 날’입니다! 지구의 날을 맞이해,
+                지친 지구에게 휴식을 주기 위해 우리가 실천할 수 있는 것들이
+                많은데요, 지구의 휴식을 위해 일상 속에서 실천할 수 있는 방법
+                중 올바르지 않은 것은 무엇일까요?! 아래 퀴즈의 정답을
+                맞혀주세요! 댓글로 객관식 문제의 정답과 전화번호 뒷자리를
+                입력해주신 분들 중 추첨을 통해 총 20분께 치킨세트 기프티콘을
+                선물로 드립니다!
+              </p>
+              <a href="#none">
+                <p class="cd_more block fr"> 인스타그램에서 보기<span> ></span></p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- youtube -->
+        <div class="card_wrap fl">
+          <p class="hashtag block fr">#YOUTUBE</p>
+          <div class="card">
+            <div class="cd_imgBox">
+              <img src="./images/article02_sns/thumbnail04.png" alt="">
+            </div>
+            <div class="cd_txtBox">
+              <h4 class="cd_tit block">
+                수원시공영주차장 주차 사전무인정산기 사용방법 안내
+              </h4>
+              <p class="cd_txt block">
+                수원시공영주차장 주차 사전무인정산기 사용방법! 영상을 통해
+                쉽게 알려드립니다! 전화문의 - 주차관리팀(공영주차장) 대표번호
+                : 031-695-0900 - 주차장운영 및 미·체납, 압류문의 :
+                031-695-0900 - 통합주차관제센터(콜센터) 031-695-0930
+              </p>
+              <a href="#none">
+                <p class="cd_more block fr">유튜브에서 보기<span> ></span></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 하단 링크배너 & 풋터 : 하단고정영역 -->
+  <div class="shortCutBg">
+    <div id="shortCutBanner">
+      <div class="arrowL fl"></div>
+      <div class="scBannerWrap fl">
+        <ul class="scBanner">
+          <li>
+            <a href="#none"><img src="./images/footer/01.gif" alt="배너1"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/02.jpg" alt="배너2"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/03.png" alt="배너3"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/04.gif" alt="배너4"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/05.jpg" alt="배너5"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/06.png" alt="배너6"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/07.gif" alt="배너7"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/08.jpg" alt="배너8"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/09.png" alt="배너9"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/10.gif" alt="배너10"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/11.png" alt="배너11"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/12.gif" alt="배너12"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/13.gif" alt="배너13"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/14.gif" alt="배너14"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/15.gif" alt="배너15"></a>
+          </li>
+          <li>
+            <a href="#none"><img src="./images/footer/16.gif" alt="배너16"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="arrowR fl"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="footerTop">
+      <ul>
+        <li><a href="#none">저작권정책</a></li>
+        <li>|</li>
+        <li>
+          <a href="#none"><b>개인정보처리방침</b></a>
+        </li>
+        <li>|</li>
+        <li><a href="#none">이메일무단수집거부</a></li>
+        <li>|</li>
+        <li><a href="#none">이용약관</a></li>
+        <li>|</li>
+        <li><a href="#none">찾아오시는 길</a></li>
+      </ul>
+      <div class="links" id="links1">
+        <div class="dropdown_btn" id="relSites">
+          <span class="selected_item">유관기관 홈페이지</span>
+          <span class="material-symbols-outlined fr moreL">
+            expand_less
+          </span>
+        </div>
+        <div class="dropdown_menu" id="dm1">
+          <div class="dm_item">
+            <a href="#none">경기도청</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">수원특례시</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">경기도 공단협의회</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">수원 문화재단</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">수원 도시재단</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">수원시 체육회</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">수원 문화원</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">수원수목원</a>
+          </div>
+        </div>
+      </div>
+      <div class="links" id="links2">
+        <div class="dropdown_btn" id="famillySite">
+          <span class="selected_item">패밀리사이트</span>
+          <span class="material-symbols-outlined fr moreR">
+            expand_less
+          </span>
+        </div>
+        <div class="dropdown_menu" id="dm2">
+          <div class="dm_item">
+            <a href="#none">수원도시공사</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">장안구민회관</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">수원시연화장</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">종합운동장</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">화산체육공원</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">수원시장기요양지원센터</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">교통약자 한아름콜센터</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">수원시자원순환센터</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">수원 여자축구단</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">광교호수공원가족캠핑장</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">수원시가족여성회관</a>
+          </div>
+          <div class="dm_item">
+            <a href="#none">광교웰빙국민체육센터</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footerBottom">
+      <div class="footerWrap">
+        <p class="block">
+          <img src="./images/logo/logo-w.png" height="45" alt="footer_logo">
+        </p>
+        <div class="ft_detail">
+          <div class="ft_txt">
+            <p>대표전화 : <b>031-240-2824</b></p>
+            <address>
+              (우편번호 : <b>16429</b>) 수원시 권선구 수인로 126, 수원도시공사
+              (더함파크 3층)
+            </address>
+            <p>
+              &copy; 2023 Suwon Urban Development Corporation(SUDC). ALL
+              RIGHTS RESERVED.
+            </p>
+          </div>
+          <div class="marks">
+            <ul>
+              <li class="fr"></li>
+              <li class="fr"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
